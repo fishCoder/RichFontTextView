@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RichFontTextView textView = (RichFontTextView) findViewById(R.id.text);
-        textView.setText("<font size='80' line='under|del' style='b'  background='#EED5B7'>hello</font><font color='#FF0000' size='40' script='super' >ooo</font>");
+        textView.setText("<font size='80' line='under|del' style='b'  background='#EED5B7'>hello</font>  default font <font color='#FF0000' size='60'>ooo</font>");
     }
 }

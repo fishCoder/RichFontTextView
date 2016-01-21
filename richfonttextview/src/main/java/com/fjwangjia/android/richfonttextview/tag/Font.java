@@ -132,7 +132,7 @@ public class Font extends Tag {
 
     void buildTypeFace(){
         if (typeface != null){
-            TypefaceSpan typefaceSpan =  new TypefaceSpan("default");
+            TypefaceSpan typefaceSpan =  new TypefaceSpan(typeface);
             spans.add(typefaceSpan);
         }
     }
