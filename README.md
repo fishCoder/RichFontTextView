@@ -1,5 +1,5 @@
 ##RichFontTextView
-***
+
 
 用textview实现下面这张图的效果需要使用SpannableStringBuilder，而SpannableStringBuilder使用很繁琐，代码一大堆而且还要计算坐标真是麻烦。而RichFontTextView可以简单的xml配置达到很多复杂的效果
 
@@ -35,7 +35,7 @@ using RichFontTextView
 textView.setText("<font size='80' line='under|del' style='b'  background='#EED5B7'>hello</font>  default font <font color='#FF0000' size='60'>ooo</font>");
 ```
 
-***
+
 
 ###How to use
 
@@ -61,15 +61,15 @@ textView.setText("<font size='80' line='under|del' style='b'  background='#EED5B
 
 **script**  : sub or super (this attribute corresponds SubscriptSpan and SuperscriptSpan)
 
-***
+
 
 ####dependencies
 
 ```
-	compile 'com.fjwangjia.android:richfonttextview:1.0.0'
+	compile 'com.fjwangjia.android:richfonttextview:1.1.1'
 ```
 
-***
+
 ###TODO
 
 this textview don`t yet support to  the URL and Image   
