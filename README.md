@@ -61,6 +61,13 @@ textView.setText("<font size='80' line='under|del' style='b'  background='#EED5B
 
 **script**  : sub or super (this attribute corresponds SubscriptSpan and SuperscriptSpan)
 
+***
+
+####dependencies
+
+```
+	compile 'com.fjwangjia.android:richfonttextview:1.0.0'
+```
 
 ***
 ###TODO
