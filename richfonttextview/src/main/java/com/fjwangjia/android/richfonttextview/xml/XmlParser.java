@@ -29,11 +29,21 @@ public class XmlParser {
         XmlPullParser parser = Xml.newPullParser();
         InputStream inputStream = null;
         try {
+
+            int index = xml.indexOf('<');
+            Tag tag = new Font();
+            if(index != -1){
+                tag.setValue(xml.substring(0,index));
+                xml = xml.substring(index,xml.length());
+            }else {
+                return null;
+            }
+
             inputStream = new ByteArrayInputStream(xml.toLowerCase().getBytes("UTF-8"));
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
             parser.setInput(inputStream, null);
             parser.nextTag();
-            return renderElement(parser);
+            return renderElement(parser,tag);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (XmlPullParserException e) {
@@ -57,8 +67,11 @@ public class XmlParser {
         return null;
     }
 
-    public List<Tag> renderElement(XmlPullParser parser) throws IOException, IllegalAccessException, InstantiationException, XmlPullParserException {
+
+    public List<Tag> renderElement(XmlPullParser parser,Tag head) throws IOException, IllegalAccessException, InstantiationException, XmlPullParserException {
         List<Tag> tags = new ArrayList<>();
+        tags.add(head);
+
         int eventType = 0;
 
         eventType = parser.getEventType();

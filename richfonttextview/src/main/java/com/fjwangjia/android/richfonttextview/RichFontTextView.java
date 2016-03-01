@@ -36,6 +36,7 @@ public class RichFontTextView extends TextView {
             return;
         }
 
+        if(text == null) text="";
 
         XmlParser xmlParser = new XmlParser();
         List<Tag> tags = xmlParser.parse(text.toString());
