@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.fjwangjia.android.richfonttextviewdemo"
-        minSdkVersion 15
+        minSdkVersion 8
         targetSdkVersion 23
         versionCode 3
         versionName "1.1.3"

@@ -32,7 +32,7 @@ using SpannableStringBuilder
 using RichFontTextView
 
 ```
-textView.setText("<font size='80' line='under|del' style='b'  background='#EED5B7'>hello</font>  default font <font color='#FF0000' size='60'>ooo</font>");
+textView.setRichText("<font size='80' line='under|del' style='b'  background='#EED5B7'>hello</font>  default font <font color='#FF0000' size='60'>ooo</font>");
 ```
 
 
@@ -66,7 +66,7 @@ textView.setText("<font size='80' line='under|del' style='b'  background='#EED5B
 ####dependencies
 
 ```
-	compile 'com.fjwangjia.android:richfonttextview:1.1.6'
+	compile 'com.fjwangjia.android:richfonttextview:1.1.7'
 ```
 
 
