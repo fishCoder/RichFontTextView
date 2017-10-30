@@ -66,7 +66,7 @@ textView.setRichText("<font size='80' line='under|del' style='b'  background='#E
 ####dependencies
 
 ```
-	compile 'com.fjwangjia.android:richfonttextview:1.1.7'
+	compile 'com.fjwangjia.android:richfonttextview:1.1.8'
 ```
 
 
